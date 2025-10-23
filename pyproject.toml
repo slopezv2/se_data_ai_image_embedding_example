@@ -1,7 +1,7 @@
 [project]
 name = "se-data-ai-image-embedding-example"
 version = "0.1.0"
-description = "Add your description here"
+description = "Example using AI Vision multi-modal embeddings to vectorize images and store them in PostgreSQL with pgvector extension."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

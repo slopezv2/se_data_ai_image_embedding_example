@@ -53,14 +53,21 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 Create a virtual environment and install dependencies:
 
 ```bash
-# Create and activate virtual environment with uv
-uv venv
+# Sync dependencies from uv.lock (recommended - ensures exact versions)
+uv sync
+
+# Activate the virtual environment
 # On Windows
 .venv\Scripts\activate
 # On macOS/Linux
 source .venv/bin/activate
+```
 
-# Install dependencies
+Alternatively, if you don't have a `uv.lock` file:
+
+```bash
+# Create virtual environment and install from requirements.txt
+uv venv
 uv pip install -r requirements.txt
 ```
 
